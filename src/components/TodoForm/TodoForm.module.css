@@ -1,0 +1,12 @@
+.btn{
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form{
+    border: 2px solid black;
+    width: 350px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
