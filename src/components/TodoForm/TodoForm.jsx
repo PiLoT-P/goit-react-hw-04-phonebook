@@ -26,7 +26,7 @@ const TodoForm = ({ contacts, addTodo }) => {
         let k = 0;
 
         contacts.map((el) => {
-            if (el.name === name) {
+            if (el.name.toLowerCase() === name.toLowerCase()) {
                 alert(name+' is already in contacts');
                 k++;
             }
@@ -35,7 +35,9 @@ const TodoForm = ({ contacts, addTodo }) => {
         if (k > 0) {
             return;
         } else {
-            addTodo(todo);   
+            addTodo(todo);
+            setName('');
+            setNumber('');
         }
     }
 
